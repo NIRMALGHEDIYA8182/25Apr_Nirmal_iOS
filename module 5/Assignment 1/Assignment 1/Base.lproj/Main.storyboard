@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Assignment_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PX3-eT-CUs">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="160" id="cBc-SF-2Im" customClass="TableViewCell" customModule="Assignment_1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="160"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cBc-SF-2Im" id="WDE-qp-CW9">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ae3-Wr-Dfb">
+                                                    <rect key="frame" x="8" y="8" width="398" height="144"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0P-Bw-0KZ">
+                                                            <rect key="frame" x="8" y="25" width="61" height="39"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="28"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wAT-Bb-Ok8">
+                                                            <rect key="frame" x="8" y="84" width="52.5" height="33"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="24"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="144" id="0IJ-5k-nby"/>
+                                                        <constraint firstItem="H0P-Bw-0KZ" firstAttribute="top" secondItem="Ae3-Wr-Dfb" secondAttribute="top" constant="25" id="2r2-2f-D8j"/>
+                                                        <constraint firstAttribute="width" constant="398" id="65r-PF-bhD"/>
+                                                        <constraint firstItem="H0P-Bw-0KZ" firstAttribute="leading" secondItem="Ae3-Wr-Dfb" secondAttribute="leading" constant="8" id="9Sf-nm-KoY"/>
+                                                        <constraint firstItem="wAT-Bb-Ok8" firstAttribute="top" secondItem="H0P-Bw-0KZ" secondAttribute="bottom" constant="20" id="WOh-L0-Ulm"/>
+                                                        <constraint firstAttribute="bottom" secondItem="wAT-Bb-Ok8" secondAttribute="bottom" constant="27" id="dLg-3I-JDC"/>
+                                                        <constraint firstItem="wAT-Bb-Ok8" firstAttribute="leading" secondItem="Ae3-Wr-Dfb" secondAttribute="leading" constant="8" id="yoD-5O-men"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ae3-Wr-Dfb" firstAttribute="top" secondItem="WDE-qp-CW9" secondAttribute="top" constant="8" id="FTI-1e-OUa"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ae3-Wr-Dfb" secondAttribute="trailing" constant="8" id="L59-P0-Klw"/>
+                                                <constraint firstItem="Ae3-Wr-Dfb" firstAttribute="centerX" secondItem="WDE-qp-CW9" secondAttribute="centerX" id="NBv-hm-Pji"/>
+                                                <constraint firstItem="Ae3-Wr-Dfb" firstAttribute="leading" secondItem="WDE-qp-CW9" secondAttribute="leading" constant="8" id="g57-Bc-ABp"/>
+                                                <constraint firstAttribute="bottom" secondItem="Ae3-Wr-Dfb" secondAttribute="bottom" constant="8" id="s1k-7p-wHo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lbl_city" destination="H0P-Bw-0KZ" id="leg-i6-Agg"/>
+                                            <outlet property="lbl_state" destination="wAT-Bb-Ok8" id="xYg-2e-GVS"/>
+                                            <outlet property="tab_view" destination="Ae3-Wr-Dfb" id="V13-mQ-pEO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="mbC-ch-DoQ"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="0xf-A9-WCi"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PX3-eT-CUs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Fo-Tt-001"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PX3-eT-CUs" secondAttribute="trailing" id="IBg-iq-qZi"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PX3-eT-CUs" secondAttribute="bottom" id="iqC-dv-KwS"/>
+                            <constraint firstItem="PX3-eT-CUs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ra7-EM-qsM"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="119"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
