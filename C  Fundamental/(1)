@@ -1,0 +1,20 @@
+//Find Area of Square formula : a = a2
+
+#include <stdio.h>
+
+int main() {
+    // Declare variables
+    double side_length, area;
+
+    // Input side length from the user
+    printf("Enter length: ");
+    scanf("%lf", &side_length);
+
+    // Calculate area
+    area = side_length * side_length;
+
+    // Display the result
+    printf("Area of the square with side length %.2lf is: %.2lf\n", side_length, area);
+
+    return 0;
+}
