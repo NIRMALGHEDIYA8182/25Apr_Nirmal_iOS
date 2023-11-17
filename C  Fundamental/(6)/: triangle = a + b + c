@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    // Declare variables to store the lengths of the sides
+    double a, b, c;
+
+    // Input the lengths of the sides from the user
+    printf("Enter the length of side a: ");
+    scanf("%lf", &a);
+
+    printf("Enter the length of side b: ");
+    scanf("%lf", &b);
+
+    printf("Enter the length of side c: ");
+    scanf("%lf", &c);
+
+    // Calculate the circumference (perimeter) of the triangle
+    double perimeter = a + b + c;
+
+    // Display the result
+    printf("The circumference (perimeter) of the triangle is: %lf\n", perimeter);
+
+    return 0;
+}
