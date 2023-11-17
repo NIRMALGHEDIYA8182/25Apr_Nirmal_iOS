@@ -1,0 +1,81 @@
+//Calculate person’s insurance premium based on salary
+
+#include <stdio.h>
+
+int main() {
+    // Declare variables
+    double salary, premium;
+
+    // Prompt user for input
+    printf("Enter the person's salary: ");
+    scanf("%lf", &salary);
+
+    // Calculate insurance premium based on salary range
+    if (salary < 50000) {
+        premium = 0.02 * salary; // 2% of salary
+    } else if (salary >= 50000 && salary < 100000) {
+        premium = 0.04 * salary; // 4% of salary
+    } else {
+        premium = 0.06 * salary; // 6% of salary
+    }
+
+    // Display the result
+    printf("Insurance premium: %.2f\n", premium);
+
+    return 0;
+}
+
+//Calculate person’s Annual salary
+
+#include <stdio.h>
+
+int main() {
+    // Declare variables
+    float monthlySalary;
+    int numberOfMonths = 12; // Assuming a yearly salary, so 12 months
+
+    // Prompt user for input
+    printf("Enter the monthly salary: $");
+    scanf("%f", &monthlySalary);
+
+    // Calculate annual salary
+    float annualSalary = monthlySalary * numberOfMonths;
+
+    // Display the result
+    printf("Annual salary: $%.2f\n", annualSalary);
+
+    return 0;
+}
+
+//Calculate compound interest
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    // Declare variables
+    double principal, rate, time, compoundInterest;
+    int compoundingFrequency;
+
+    // Prompt user for input
+    printf("Enter principal amount: ");
+    scanf("%lf", &principal);
+
+    printf("Enter annual interest rate (in decimal form): ");
+    scanf("%lf", &rate);
+
+    printf("Enter compounding frequency per year: ");
+    scanf("%d", &compoundingFrequency);
+
+    printf("Enter time in years: ");
+    scanf("%lf", &time);
+
+    // Calculate compound interest
+    compoundInterest = principal * pow(1 + rate / compoundingFrequency, compoundingFrequency * time) - principal;
+
+    // Display the result
+    printf("Compound Interest: %.2lf\n", compoundInterest);
+
+    return 0;
+}
+
+
