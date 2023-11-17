@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    // Declare variables
+    int numberOfStudents, totalApples;
+
+    // Prompt user for input
+    printf("Enter the number of students: ");
+    scanf("%d", &numberOfStudents);
+
+    // Calculate total apples
+    totalApples = numberOfStudents * 5;
+
+    // Display the result
+    printf("Total apples required: %d\n", totalApples);
+
+    return 0;
+}
