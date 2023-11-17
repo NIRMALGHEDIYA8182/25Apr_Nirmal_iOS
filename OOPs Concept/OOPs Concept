@@ -1,0 +1,45 @@
+(1.)Class:
+class is a user define blueprint it is set of instruction that perform on object.
+
+EX: class ABC {
+// Your Personal attributes and abilities can be defined here.
+// Don't write if u are a vampire ;]
+}
+
+(2.)Object:
+Object is an instaance of a class and you can create many object of same class.
+EX: let myclass = ABC()
+
+(3.)Abstaction:
+Abstaction is process which display need data and hide annecessary data.
+
+(4.)Inheritance:
+Inheritance is defined as a process by which you inherit the properties of your parent. Technically, Inheritance is a process by which a child class inherits the properties of its parent class.
+EX: 
+//base class or parent class or super class 
+class A{ 
+  //parent class methods 
+  void method1(){} 
+  void method2(){} 
+} 
+  
+//derived class or child class or base class 
+class B extends A{  //Inherits parent class methods 
+  //child class methods 
+  void method3(){} 
+  void method4(){} 
+}
+
+(5.)Polymorphism:
+Polymorephism means many forms that perform one action in different way.Polymorphism in Java is mainly of 2 types: 
+1.Overloading
+2.Overriding 
+EX:sleep(1000) //millis 
+sleep(1000,2000) //millis,nanos
+
+(6.)Encapsulation:
+It is bind data and code in single unit for safe another class that perform in current class.
+EX:class Employee { 
+    private int empid; 
+      private String ename; 
+} 
