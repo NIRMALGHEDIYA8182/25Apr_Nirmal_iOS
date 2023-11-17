@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+   
+    double monthlySalary, insurancePremium, loanInstallment, remainingSalary;
+
+    printf("Enter monthly salary: ");
+    scanf("%lf", &monthlySalary);
+
+   
+    insurancePremium = 0.10 * monthlySalary;
+    loanInstallment = 0.10 * monthlySalary;
+
+   
+    remainingSalary = monthlySalary - insurancePremium - loanInstallment;
+
+    printf("Monthly Salary: %.2lf\n", monthlySalary);
+    printf("Deducted Insurance Premium: %.2lf\n", insurancePremium);
+    printf("Deducted Loan Installment: %.2lf\n", loanInstallment);
+    printf("Remaining Salary: %.2lf\n", remainingSalary);
+
+    return 0;
+}
