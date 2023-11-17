@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    double side; // assuming 'a' is one of the sides of the rectangle
+
+    // Input the value of 'a'
+    printf("Enter the length of one side (a) of the rectangle: ");
+    scanf("%lf", &side);
+
+    // Calculate the "circumference" using C = 4 * a
+    double circumference = 4 * side;
+
+    // Output the result
+    printf("The \"circumference\" of the rectangle is: %lf\n", circumference);
+
+    return 0;
+}
