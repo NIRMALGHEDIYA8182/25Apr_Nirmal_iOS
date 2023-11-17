@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    // Declare a variable to store the side length of the cube
+    double sideLength;
+
+    // Prompt the user to enter the side length
+    printf("Enter the side length of the cube: ");
+    scanf("%lf", &sideLength);
+
+    // Calculate the surface area of the cube
+    double surfaceArea = 6 * sideLength * sideLength;
+
+    // Display the result
+    printf("The surface area of the cube is: %lf\n", surfaceArea);
+
+    return 0;
+}
