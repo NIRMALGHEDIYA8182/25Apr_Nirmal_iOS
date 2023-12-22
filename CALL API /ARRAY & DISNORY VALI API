@@ -1,0 +1,104 @@
+-----------------------------------------------------------------------------------------------------------------------------------------
+// ARRAY TYPE OF API
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+STEP : 1 CREATE STRUCTURE
+>> Struct APIModel:Decodable
+{
+  let a:String?
+  let b:String?
+}
+
+Step : 2 CREATE OBJECT OF APIModel in array
+   >>var apidata = [APIModel]()
+
+Step : 3 CALL API
+
+>> Func apicalling()
+{
+   >>let apiurl = URL(String:"http://zenquotes.io/api")
+   >>URLSession.shared.datatask(with:apiurl!) { data , response , error ) in
+   do
+   {
+   >>self.apidata = try JSONSecoder().decode([APIModel].self, from:data!)
+   >>print(self.apidata)
+
+   >>DispatchQueue.main.async 
+   {
+    >>self.my_table.reloadData()
+   }
+}
+catch {
+   >>print(error)
+}.resume()
+}
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+// DICTIONARY TYPE OF API
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+Step : 1 CREATE MODEL 
+ >>Struct apidata:Codable
+ {
+ >>var statewise:[Statewise]? = []
+ }
+
+ >>Sruct Statewise:Codable
+ {
+ >>var active:Sting?
+ >>var state:Sting?
+ >>var statecode:String?
+ }
+
+Step : 2 Create Object of Struct Statewise
+ >> var apiarray = [Statewise]()
+
+Step : 3 CALL API 
+
+func apicall ()
+{
+let url = URL(String:"https://data")
+URLSession.shared.datatask(with:url!) { (data, response, error) in 
+
+do {
+ let covid = JSONDecoder()
+ let result = try covid.decode(apidata.self, from:data!)
+ self.apiarray = result.statewise!
+
+DispatchQueue.main.asyc {
+  self.my_table.reloaddata()
+ }
+}
+catch 
+{
+print("Error")
+}
+
+}.resume()
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
